@@ -1,0 +1,22 @@
+Sales Forecasting — Time Series Analysis
+Tech Stack: Python, Pandas, Statsmodels, XGBoost, Matplotlib
+
+- Engineered a complete end-to-end time series forecasting pipeline 
+  on 4 years of Superstore retail data (9,994 transactions)
+
+- Performed data preprocessing including datetime conversion, 
+  missing value imputation for 220 missing dates, and outlier 
+  capping using 99th percentile winsorization
+
+- Conducted EDA revealing strong weekly seasonality and 
+  Year-over-Year upward sales trend using ACF/PACF analysis
+
+- Built SARIMA(1,1,1)(1,1,1,7) model achieving MAE of 1857, 
+  successfully capturing weekly seasonal patterns
+
+- Developed XGBoost model with 12 engineered lag features 
+  (lag_1 to lag_30, rolling averages) achieving comparable 
+  MAE of 1898 with superior spike-tracking behavior
+
+- Generated 30-day future sales forecast to support inventory 
+  planning and budget allocation decisions
